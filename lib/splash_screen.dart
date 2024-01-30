@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:ui';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hw_i_baza/assets/icons.dart';
@@ -69,6 +70,7 @@ class _SplashScreenState extends State<SplashScreen> {
               padding: const EdgeInsets.fromLTRB(112, 380, 112, 0),
               child: Column(
                 children: [
+                
                   SvgPicture.asset(AppIcons.logo),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(100, 400, 200, 0),

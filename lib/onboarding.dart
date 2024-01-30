@@ -73,17 +73,75 @@ class _OnboardingState extends State<Onboarding> {
                 children: [
                   Column(
                     children: [
-                      Text("10 000 dan ortiq mahsulotlar va qulay interfeys"),
-                      Image.asset(AppImages.location),
+                      const Padding(
+                        padding: EdgeInsets.all(20),
+                        child: Text(
+                          "10 000 dan ortiq mahsulotlar va qulay interfeys",
+                          style: TextStyle(
+                              fontSize: 24, fontWeight: FontWeight.w700),
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.all(20),
+                        child: Text(
+                          "iBaza ilovasida 10 000 dan ortiq mahsulotlar joy olgan",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.w400),
+                        ),
+                      ),
+                      Expanded(
+                          child: Image.asset(
+                        AppImages.location,
+                      )),
                     ],
                   ),
                   Column(
                     children: [
-                      Image.asset(AppImages.gift),
+                      const Padding(
+                        padding: EdgeInsets.all(20),
+                        child: Text(
+                          "Maxsus chegirmalar!",
+                          style: TextStyle(
+                              fontSize: 24, fontWeight: FontWeight.w700),
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.all(20),
+                        child: Text(
+                          "Ilova orqali maxsus chegirma va kuponlardan baxramand bo‘ling!",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.w400),
+                        ),
+                      ),
+                      Expanded(
+                          child: Image.asset(
+                        AppImages.gift,
+                      )),
                     ],
                   ),
                   Column(
-                    children: [Image.asset(AppImages.rocket)],
+                    children: [ const Padding(
+                        padding: EdgeInsets.all(20),
+                        child: Text(
+                          "Hoziroq ro‘yxatdan o‘ting!!",
+                          style: TextStyle(
+                              fontSize: 24, fontWeight: FontWeight.w700),
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.all(20),
+                        child: Text(
+                          "Ro‘yxatdan o‘tib, ilova imkoniyatlaridan to‘liq foydalaning",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.w400),
+                        ),
+                      ),
+                      Expanded(
+                          child: 
+                      Image.asset(
+                        AppImages.rocket,)
+                      )
+                    ],
                   )
                 ],
               ),
